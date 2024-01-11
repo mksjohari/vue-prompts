@@ -1,0 +1,19 @@
+{
+  "name": "vue-prompts",
+  "version": "1.0.0",
+  "description": "programmatic way to show prompts to user",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mksjohari/vue-prompts.git"
+  },
+  "author": "mksjohari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mksjohari/vue-prompts/issues"
+  },
+  "homepage": "https://github.com/mksjohari/vue-prompts#readme"
+}
