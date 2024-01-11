@@ -12,6 +12,8 @@ export default () => {
           detail: {
             id: Math.random().toString(36).substr(2, 9),
             type: "yesNo",
+            yesText: opts.yesText || "Yes",
+            noText: opts.noText || "No",
             cb: resolve,
             ...opts
           }

@@ -11,8 +11,10 @@
           <div class="heading">{{ p.heading }}</div>
           <div class="message">{{ p.message }}</div>
           <div class="buttons">
-            <button class="no" @click="handle(p, 'NO')">NO</button>
-            <button class="yes" @click="handle(p, 'YES')">YES</button>
+            <button class="no" @click="handle(p, false)">{{ p.noText }}</button>
+            <button class="yes" @click="handle(p, true)">
+              {{ p.yesText }}
+            </button>
           </div>
         </div>
       </div>
@@ -93,6 +95,7 @@ export default {
   justify-content: center
   height: 100%
   position: relative
+  padding: 1rem
   .yesNo
     position: relative
     text-align: center
