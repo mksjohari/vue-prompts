@@ -70,7 +70,6 @@ export default {
   methods: {
     addPrompt(e) {
       this.prompts.push(e.detail);
-      console.log(this.prompts);
     },
     handleTapOut() {
       if (!this.prompts.find((p) => p.type === "yesNo")) {
@@ -131,7 +130,7 @@ export default {
     line-height: 24px
     letter-spacing: 0.75px
     font-weight: 500
-    padding-bottom: 1rem
+    padding-bottom: 0.5rem
   .prompt
     position: relative
     text-align: center
@@ -158,12 +157,14 @@ export default {
       gap: 0.5rem
       padding-top: 0.625rem
       &.yesNo
-        width: 50%
+        width: 100%
         .yes
+          width: 50%
           background: v-bind('colors.yesBg')
           border: 1px solid v-bind('colors.yesBorder')
           color: v-bind('colors.yesText')
         .no
+          width: 50%
           background: v-bind('colors.noBg')
           border: 1px solid v-bind('colors.noBorder')
           color: v-bind('colors.noText')
