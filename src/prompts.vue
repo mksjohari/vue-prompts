@@ -70,6 +70,7 @@ export default {
   methods: {
     addPrompt(e) {
       this.prompts.push(e.detail);
+      console.log(this.prompts);
     },
     handleTapOut() {
       if (!this.prompts.find((p) => p.type === "yesNo")) {

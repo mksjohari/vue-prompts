@@ -12,6 +12,7 @@ export default () => {
       return new Promise((resolve) => {
         const event = new CustomEvent("add-prompt", {
           detail: {
+            ...opts,
             id: Math.random().toString(36).substr(2, 9),
             type: "yesNo",
             yesText: opts.yesText || "Yes",
@@ -27,6 +28,7 @@ export default () => {
       return new Promise((resolve) => {
         const event = new CustomEvent("add-prompt", {
           detail: {
+            ...opts,
             id: Math.random().toString(36).substr(2, 9),
             type: "alert",
             btnText: opts.btnText || "Okay",
@@ -46,6 +48,7 @@ export default () => {
       return new Promise((resolve) => {
         const event = new CustomEvent("add-prompt", {
           detail: {
+            ...opts,
             id: Math.random().toString(36).substr(2, 9),
             type: "actions",
             heading: opts.heading || "Select an option",
